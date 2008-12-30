@@ -19,8 +19,8 @@ public class CamelCaseTest {
 	@Test
 	public void testConvertSomeStringsToCamelCase() {
 		assertThatAsCamelCase("word", is(equalTo("word")));
-        assertThatAsCamelCase("word word", is(equalTo("wordWord")));
-        assertThatAsCamelCase("word word 1", is(equalTo("wordWord1")));
-        assertThatAsCamelCase("word word +!@#$%^1&*()))(*&^%$#}{|\"", is(equalTo("wordWord1")));
+		assertThatAsCamelCase("word word", is(equalTo("wordWord")));
+		assertThatAsCamelCase("word word 1", is(equalTo("wordWord1")));
+		assertThatAsCamelCase("word word +!@#$%^1&*()))(*&^%$#}{|\"", is(equalTo("wordWord1")));
 	}
 }

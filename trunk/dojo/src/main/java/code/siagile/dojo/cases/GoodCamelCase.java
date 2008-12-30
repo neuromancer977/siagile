@@ -2,6 +2,8 @@ package code.siagile.dojo.cases;
 
 import static java.lang.Character.*;
 
+import org.hamcrest.*;
+
 /** @author Luca Marrocco */
 public class GoodCamelCase {
 	interface ChangeCase {
@@ -57,6 +59,7 @@ public class GoodCamelCase {
 		return string.equals(asCamelCase(string));
 	}
 
+	@Factory
 	public static ChangeCase lowercase(final Condition condition) {
 		return new ChangeCase() {
 			public char apply(char ch) {
@@ -69,6 +72,7 @@ public class GoodCamelCase {
 		};
 	}
 
+	@Factory
 	public static ChangeCase uppercase(final Condition condition) {
 		return new ChangeCase() {
 			public char apply(char ch) {

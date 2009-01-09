@@ -10,9 +10,20 @@ handlers:
 - url: /js
   static_dir: js
 
+- url: /css
+  static_dir: css
+
 - url: /favicon.ico
   static_files: img/favicon.ico
   upload: img/favicon.ico
+
+- url: /asterisk.html
+  static_files: asterisk.html
+  upload: asterisk.html
+
+- url: /flavour.html
+  static_files: flavour.html
+  upload: flavour.html
 
 - url: .*
   static_files: index.html

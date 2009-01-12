@@ -1,10 +1,11 @@
 package code.siagile.dojo.cases;
 
-import static org.hamcrest.CoreMatchers.*;
-import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.equalTo;
+import static org.hamcrest.CoreMatchers.is;
+import static org.junit.Assert.assertThat;
 
-import org.hamcrest.*;
-import org.junit.*;
+import org.hamcrest.Matcher;
+import org.junit.Test;
 
 /** @author Luca Marrocco */
 public class CamelCaseTest {

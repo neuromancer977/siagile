@@ -43,6 +43,6 @@ public class Employee {
 	}
 
 	public boolean wasBorn(String date) {
-		return birthDay.equals(date);
+		return birthDay.replaceAll("\\d{4}/", "").equals(date.replaceAll("\\d{4}/", ""));
 	}
 }

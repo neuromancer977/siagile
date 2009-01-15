@@ -10,5 +10,6 @@ http://maven.apache.org/maven-v4_0_0.xsd">
   <modules>
 	  <module>dojo</module>
 	  <module>greetings</module>
+	  <module>lambdaj</module>
 	</modules>
 </project>

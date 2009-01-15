@@ -12,6 +12,8 @@ public class GreetingTest {
 	public void testGreeting() {
 		Employee Doe = employee("Doe, John, 1982/10/08, jonh.doe@foobar.com");
 
-		assertThat(happy("birthday", Doe).toString(), containsString("Happy birthday, Doe"));
+		Greeting greeting = Doe.greeting(HappyBirthDay);
+		
+		assertThat(greeting.toString(), containsString("Happy birth day, Doe"));
 	}
 }

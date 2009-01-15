@@ -23,7 +23,7 @@ public class Mail {
 
 	@Override
 	public String toString() {
-		return join(asList(message, to));
+		return join(asList(message, to.toString()));
 	}
 
 }

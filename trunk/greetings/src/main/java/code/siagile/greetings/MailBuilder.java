@@ -1,5 +1,6 @@
 package code.siagile.greetings;
 
+
 public class MailBuilder {
 	public static Mail mail(Greeting greeting, Employee employee) {
 		return new MailBuilder(greeting).to(employee).newMail();
@@ -20,9 +21,8 @@ public class MailBuilder {
 	}
 
 	private MailBuilder to(Employee employee) {
-		employee.greeting(greeting);
+		withMessage = employee.greeting(greeting).toString();
 		employee.email(to);
-		withMessage = greeting.toString();
 		return this;
 	}
 }

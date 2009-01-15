@@ -12,6 +12,6 @@ public class MailTest {
 	public void testMailToEmployee() {
 		Employee John = employee("Doe, John, 1982/10/08, jonh.doe@foobar.com");
 
-		assertThat(mail(HappyBirthDay, John).toString(), is(equalTo("Happy birth day, Doe, jonh.doe@foobar.com")));
+		assertThat(mail(new HappyBirthDayGreeting(), John).toString(), is(equalTo("Happy birth day, Doe, jonh.doe@foobar.com")));
 	}
 }

@@ -23,7 +23,7 @@ public class MainTest {
 		foobarDotCom.employ(new EmployeesReader(employees));
 		foobarDotCom.sendHappyBirthDayEmailTo(born(today));
 
-		Mail mailToJohn = mail(HappyBirthDay, employee("Doe, John, 1982/10/08, jonh.doe@foobar.com\n"));
+		Mail mailToJohn = mail(new HappyBirthDayGreeting(), employee("Doe, John, 1982/10/08, jonh.doe@foobar.com\n"));
 
 		assertThat(mailBox, hasItems(mailToJohn));
 

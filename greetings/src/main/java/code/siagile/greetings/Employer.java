@@ -1,7 +1,6 @@
 package code.siagile.greetings;
 
 import static ch.lambdaj.Lambda.*;
-import static code.siagile.greetings.Greeting.*;
 import static java.util.Arrays.*;
 
 import java.util.*;
@@ -35,7 +34,7 @@ public class Employer implements Iterable<Employee> {
 	}
 
 	public void sendHappyBirthDayEmailTo(Matcher employeeMatcher) {
-		mailBox.send(HappyBirthDay, to(this, employeeMatcher));
+		mailBox.send(new HappyBirthDayGreeting(), to(this, employeeMatcher));
 	}
 
 }

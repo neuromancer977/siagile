@@ -19,9 +19,9 @@ public class HappyBirthdayEmployeesBornToday {
 		Iterable<Employee> employees = asList(John, Alice);
 		String today = "1982/10/08";
 		MailBox mailBox = new MailBox();
-		Mail mailToJohn = mail(HappyBirthDay, John);
+		Mail mailToJohn = mail(new HappyBirthDayGreeting(), John);
 
-		mailBox.send(HappyBirthDay, to(employees, born(today)));
+		mailBox.send(new HappyBirthDayGreeting(), to(employees, born(today)));
 
 		assertThat(mailBox, hasItems(mailToJohn));
 	}

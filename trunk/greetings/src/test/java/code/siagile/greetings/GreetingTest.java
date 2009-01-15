@@ -12,7 +12,7 @@ public class GreetingTest {
 	public void testGreeting() {
 		Employee Doe = employee("Doe, John, 1982/10/08, jonh.doe@foobar.com");
 
-		Greeting greeting = Doe.greeting(HappyBirthDay);
+		Greeting greeting = Doe.greeting(new HappyBirthDayGreeting());
 		
 		assertThat(greeting.toString(), containsString("Happy birth day, Doe"));
 	}

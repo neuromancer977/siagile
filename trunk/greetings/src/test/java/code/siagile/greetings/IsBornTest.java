@@ -5,6 +5,7 @@ import static code.siagile.greetings.EmployeeIsBorn.*;
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
+import org.hamcrest.*;
 import org.junit.*;
 
 public class IsBornTest {

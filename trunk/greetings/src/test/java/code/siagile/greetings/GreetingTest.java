@@ -1,7 +1,6 @@
 package code.siagile.greetings;
 
 import static code.siagile.greetings.EmployeeBuilder.*;
-import static code.siagile.greetings.Greeting.*;
 import static org.junit.Assert.*;
 import static org.junit.matchers.StringContains.*;
 
@@ -15,5 +14,10 @@ public class GreetingTest {
 		Greeting greeting = Doe.greeting(new HappyBirthDayGreeting());
 		
 		assertThat(greeting.toString(), containsString("Happy birth day, Doe"));
+	}
+
+	@Test
+	public void testGreetingMe() {
+			assertThat(new Greeting().greeting("me").toString(), containsString("me"));
 	}
 }

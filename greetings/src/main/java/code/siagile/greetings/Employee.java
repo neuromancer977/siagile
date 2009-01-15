@@ -33,8 +33,8 @@ public class Employee {
 		return true;
 	}
 
-	public void greeting(Greeting greeting) {
-		greeting.greeting(firstName);
+	public Greeting greeting(Greeting greeting) {
+		return greeting.greeting(firstName);
 	}
 
 	@Override

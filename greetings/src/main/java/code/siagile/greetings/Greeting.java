@@ -8,24 +8,27 @@ public class Greeting {
 
 	private String greeting;
 
-	public static final Greeting HappyBirthDay = new Greeting("Happy birth day");
-
-	public static String happy(String day, Employee employee) {
-		Greeting greeting = new Greeting("Happy", day);
-		employee.greeting(greeting);
-		return greeting.toString();
-	}
-
-	private Greeting(String greeting) {
-		this.greeting = greeting;
-	}
+	public static final Greeting HappyBirthDay = new Greeting() {
+		@Override
+		public Greeting greeting(String name) {
+			return new Greeting("Happy", "birth day", name);
+		}
+	};
 
 	private Greeting(String greeting, String day) {
 		this.greeting = join(asList(greeting, day), " ");
 	}
 
-	public void greeting(String name) {
+	private Greeting(String greeting, String day, String name) {
+		this.greeting = join(asList(greeting, day), " ");
 		this.name = name;
+	}
+
+	private Greeting() {}
+
+	public Greeting greeting(String name) {
+		this.name = name;
+		return this;
 	}
 
 	@Override

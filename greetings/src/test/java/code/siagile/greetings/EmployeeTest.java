@@ -9,6 +9,6 @@ import org.junit.*;
 public class EmployeeTest {
 	@Test
 	public void testToString() {
-		assertThat(employee("Doe, John, 1982/10/08, jonh.doe@foobar.com").toString(), is(equalTo("Doe, John, 1982/10/08, jonh.doe@foobar.com")));
+		assertThat(employeeFrom("Doe, John, 1982/10/08, jonh.doe@foobar.com").toString(), is(equalTo("Doe, John, 1982/10/08, jonh.doe@foobar.com")));
 	}
 }

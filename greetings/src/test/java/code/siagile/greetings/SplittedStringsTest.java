@@ -1,12 +1,8 @@
 package code.siagile.greetings;
 
-import static code.siagile.greetings.SplittedStrings.*;
 import static org.hamcrest.core.Is.*;
-import static org.hamcrest.core.IsEqual.*;
 import static org.junit.Assert.*;
 import static org.junit.matchers.IsCollectionContaining.*;
-
-import java.util.*;
 
 import org.junit.*;
 

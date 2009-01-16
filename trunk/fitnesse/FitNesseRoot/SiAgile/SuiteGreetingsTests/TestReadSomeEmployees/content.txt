@@ -1,0 +1,14 @@
+!2 can read employees
+
+!|Employees|
+|row|can read row?|
+|Smith, John, 1982/17/01, john.smith@foobar.com|true|
+|Alice, Doe, 1982/17/01, alice.doe@foobar.com|true|
+
+!2 cannot read employees
+!|Employees|
+|row|can read row?|
+||false|
+|Smith|false|
+|Smith, John|false|
+|Smith, John, 1982/17/01|false|

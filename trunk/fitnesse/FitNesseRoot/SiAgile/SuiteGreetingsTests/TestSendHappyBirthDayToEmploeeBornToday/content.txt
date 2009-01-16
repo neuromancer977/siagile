@@ -1,0 +1,15 @@
+!2 Build
+!|Employees|
+|firstName|lastName|birth day|email|today|is added?|
+|John|Smith|1982/17/01|jonh.smith@foobar.com|2009/17/01|true|
+|Alice|Doe|1982/14/01|alice.doe@foobar.com|2009/17/01|true|
+
+!2 Operate
+|!-Employeer-!|
+|'''send'''|happy birthday|'''to employees born'''|2009/17/01|
+
+!2 Check
+!|MailBox|
+|email|has received?|
+|Happy birth day John! to jonh.smith@foobar.com|true|
+|Happy birth day Alice! to alice.doe@foobar.com|false|

@@ -1,0 +1,5 @@
+!3 !-fit:fit.FitServer-!
+|'''Date: '''|!-10:16:57 PM (CET) on Friday, January 16, 2009-!|
+|'''Command: '''|!-java -cp classes:fitnesse.jar:fitlibrary.jar:../greetings/target/classes:../greetings/target/test-classes:../lambdaj/target/classes:/home/luca/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar fit.FitServer luca-laptop 8080 5-!|
+|'''Exit code: '''|!-1-!|
+|'''Time elapsed: '''|!-0.98 seconds-!|

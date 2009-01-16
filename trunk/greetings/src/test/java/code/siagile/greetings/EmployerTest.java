@@ -9,8 +9,8 @@ import org.junit.*;
 public class EmployerTest {
 	@Test
 	public void testEmployer() {
-		Employee John = employee("Doe, John, 1982/10/08, jonh.doe@foobar.com");
-		Employee Alice = employee("Doe, Alice, 1980/04/03, alice.doe@foobar.com");
+		Employee John = employeeFrom("Doe, John, 1982/10/08, jonh.doe@foobar.com");
+		Employee Alice = employeeFrom("Doe, Alice, 1980/04/03, alice.doe@foobar.com");
 
 		Employer employer = new EmployerBuilder(new MailBox()).newEmployer();
 

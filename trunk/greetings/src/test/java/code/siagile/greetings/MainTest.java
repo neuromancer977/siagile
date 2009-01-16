@@ -2,7 +2,6 @@ package code.siagile.greetings;
 
 import static code.siagile.greetings.EmployeeBuilder.*;
 import static code.siagile.greetings.EmployeeIsBorn.*;
-import static code.siagile.greetings.Greeting.*;
 import static code.siagile.greetings.MailBuilder.*;
 import static org.junit.Assert.*;
 import static org.junit.matchers.IsCollectionContaining.*;
@@ -23,7 +22,7 @@ public class MainTest {
 		foobarDotCom.employ(new EmployeesReader(employees));
 		foobarDotCom.sendHappyBirthDayEmailTo(born(today));
 
-		Mail mailToJohn = mail(new HappyBirthDayGreeting(), employee("Doe, John, 1982/10/08, jonh.doe@foobar.com\n"));
+		Mail mailToJohn = mail(new HappyBirthDayGreeting(), employeeFrom("Doe, John, 1982/10/08, jonh.doe@foobar.com\n"));
 
 		assertThat(mailBox, hasItems(mailToJohn));
 

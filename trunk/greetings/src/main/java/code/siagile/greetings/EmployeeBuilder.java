@@ -3,7 +3,7 @@ package code.siagile.greetings;
 import java.util.*;
 
 public class EmployeeBuilder {
-	public static Employee employee(String string) {
+	public static Employee employeeFrom(String string) {
 		return new EmployeeBuilder(string).newEmployee();
 	}
 

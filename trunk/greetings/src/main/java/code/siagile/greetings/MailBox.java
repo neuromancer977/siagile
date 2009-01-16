@@ -11,9 +11,9 @@ public class MailBox implements Iterable<Mail> {
 		return emails.iterator();
 	}
 
-	public void send(Greeting happyBirthDay, Collection<Employee> employees) {
-		for (Employee employee : employees)
-			emails.add(mail(happyBirthDay, employee));
-
+	public void send(Greeting greeting, Collection<Employee> employees) {
+		for (Employee employee : employees) {
+			emails.add(mail(greeting, employee));
+		}
 	}
 }

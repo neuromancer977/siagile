@@ -24,6 +24,16 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 			<artifactId>mockito-all</artifactId>
 			<version>1.6</version>
 		</dependency>
+		<dependency>
+			<groupId>org.fitnesse</groupId>
+			<artifactId>fitnesse</artifactId>
+			<version>20081201</version>
+		</dependency>
+		<dependency>
+			<groupId>org.fitnesse</groupId>
+			<artifactId>fitlibrary</artifactId>
+			<version>20080812</version>
+		</dependency>
 	</dependencies>
 	<build>
 		<plugins>

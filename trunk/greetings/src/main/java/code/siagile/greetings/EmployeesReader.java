@@ -10,7 +10,7 @@ public class EmployeesReader implements Iterable<Employee> {
 
 	public EmployeesReader(String strings) {
 		for (String string : new SplittedStrings(strings))
-			employees.add(employee(string));
+			employees.add(employeeFrom(string));
 	}
 
 	public Iterator<Employee> iterator() {

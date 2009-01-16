@@ -1,0 +1,4 @@
+|Employees|
+|firstName|lastName|birth day|email|today|is born today?|
+|John|Smith|1982/17/01|jonh.smith@foobar.com|2009/17/01|true|
+|Alice|Doe|1982/14/01|alice.doe@foobar.com|2009/17/01|false|

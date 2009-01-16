@@ -1,0 +1,12 @@
+!contents
+
+'''Caution:''' Don't remove or modify these path statements unless you know what you are doing!
+
+!path classes
+!path fitnesse.jar
+!path fitlibrary.jar
+
+!path ../greetings/target/classes
+!path ../greetings/target/test-classes
+!path ../lambdaj/target/classes
+!path /home/luca/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar

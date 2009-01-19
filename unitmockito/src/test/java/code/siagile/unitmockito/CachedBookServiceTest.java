@@ -34,7 +34,7 @@ public class CachedBookServiceTest {
 		// un mock per l'oggetto di ritorno
 		IBook mockBook = mock(IBook.class);
 		// (2) registro il comportamento atteso
-		stub(remoteBookService.getBook("id123")).toReturn(mockBook);
+		when(remoteBookService.getBook("id123")).thenReturn(mockBook);
 
 		CachedBookService cachedBookService = new CachedBookService(remoteBookService);
 		// (3) eseguo la chiamata alla classe sotto test che interagisce con il mock
@@ -52,8 +52,8 @@ public class CachedBookServiceTest {
 		IBook mockBook1 = mock(IBook.class);
 		IBook mockBook2 = mock(IBook.class);
 		// (2) registro il comportamento atteso
-		stub(remoteBookService.getBook("id123")).toReturn(mockBook1);
-		stub(remoteBookService.getBook("id456")).toReturn(mockBook2);
+		when(remoteBookService.getBook("id123")).thenReturn(mockBook1);
+		when(remoteBookService.getBook("id456")).thenReturn(mockBook2);
 
 		CachedBookService cachedBookService = new CachedBookService(remoteBookService);
 		// (3) eseguo la chiamata alla classe sotto test che interagisce con il mock
@@ -71,7 +71,7 @@ public class CachedBookServiceTest {
 		IBookService remoteBookService = mock(IBookService.class);
 		IBook mockBook = mock(IBook.class);
 		// (2) registro solo una chiamata
-		stub(remoteBookService.getBook("id123")).toReturn(mockBook);
+		when(remoteBookService.getBook("id123")).thenReturn(mockBook);
 
 		CachedBookService cachedBookService = new CachedBookService(remoteBookService);
 		// (3) eseguo la chiamata alla classe sotto test che interagisce con il mock

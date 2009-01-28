@@ -3,11 +3,14 @@
   <classpathentry kind="src" path="src/test/java" output="target/test-classes"/>
   <classpathentry kind="output" path="target/classes"/>
   <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+  <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-all/1.6/mockito-all-1.6.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/mail/mail/1.4/mail-1.4.jar"/>
   <classpathentry kind="var" path="M2_REPO/cglib/cglib-nodep/2.1_3/cglib-nodep-2.1_3.jar"/>
-  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/exm/lambdaJ/1.2-SNAPSHOT/lambdaJ-1.2-SNAPSHOT.jar"/>
+  <classpathentry kind="var" path="M2_REPO/javax/activation/activation/1.1/activation-1.1.jar"/>
+  <classpathentry kind="var" path="M2_REPO/dumbster/dumbster/1.6/dumbster-1.6.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/fitnesse/fitlibrary/20080812/fitlibrary-20080812.jar"/>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/fitnesse/fitnesse/20081201/fitnesse-20081201.jar"/>
   <classpathentry kind="var" path="M2_REPO/junit/junit/4.4/junit-4.4.jar"/>
-  <classpathentry kind="var" path="M2_REPO/exm/lambdaj/1.2-SNAPSHOT/lambdaj-1.2-SNAPSHOT.jar"/>
-  <classpathentry kind="var" path="M2_REPO/org/mockito/mockito-all/1.6/mockito-all-1.6.jar"/>
 </classpath>

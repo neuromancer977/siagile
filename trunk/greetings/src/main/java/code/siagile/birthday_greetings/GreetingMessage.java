@@ -7,13 +7,13 @@ public class GreetingMessage implements IMessage {
 	public GreetingMessage(Employee employee) {
 		this.employee = employee;
 	}
-	public String getReceiver() {
+	public String receiver() {
 		return this.employee.getEmail();
 	}
-	public String getBody() {
+	public String body() {
 		return "Happy Birthday, dear %NAME%!".replace("%NAME%",this.employee.getFirstName());
 	}
-	public String getSubject() {
+	public String subject() {
 		return  "Happy Birthday!";
 	}
 

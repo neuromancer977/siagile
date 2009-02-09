@@ -1,7 +1,7 @@
 package code.siagile.birthday_greetings;
 
 public interface IMessage {
-	String getReceiver();
-	String getBody();
-	String getSubject();
+	String receiver();
+	String body();
+	String subject();
 }

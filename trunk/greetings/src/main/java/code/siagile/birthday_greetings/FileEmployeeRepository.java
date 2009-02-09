@@ -1,10 +1,12 @@
 package code.siagile.birthday_greetings;
 
-import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Scanner;
+
+import org.hamcrest.Matcher;
 
 public class FileEmployeeRepository implements EmployeeRepository {
 
@@ -14,37 +16,32 @@ public class FileEmployeeRepository implements EmployeeRepository {
 		this.fileName = fileName;
 	}
 
-	public List<Employee> findAllBornOn(OurDate ourDate) {
-		List<Employee> employees = new ArrayList<Employee>();
-		try {
-			BufferedReader in = readBuffer(); 
-			String line = in.readLine();
-			while ((line = in.readLine()) != null) {
-				Employee employee = readEmployee(line);
-				if (employee.isBirthday(ourDate)) {
-					employees.add(employee);
-				}
+	public List<Employee> findAll(Matcher<Employee> matcher) {
+		List<Employee> employees = new LinkedList<Employee>();
+		Scanner scanner = scanner();
+		scanner.nextLine();
+		while(scanner.hasNextLine()){
+			Employee employee = readEmployee(scanner.nextLine());
+			if (matcher.matches(employee)) {
+				employees.add(employee);
 			}
-		} catch (Exception e) {
-			throw new RuntimeException(e);
-		} 
+		}
 		return employees;
 	}
 
-	private BufferedReader readBuffer() {
-		BufferedReader in = null;
+	private Scanner scanner()  {
 		try {
-			in = new BufferedReader(new FileReader(fileName));
+			return new Scanner(new FileReader(fileName)).useDelimiter("\n");
 		} catch (FileNotFoundException e) {
 			throw new RuntimeException(e);
 		}
-		return in;
 	}
+
 	private Employee readEmployee(String str){
 		String[] employeeData = str.split(", ");
-		Employee employee = new Employee(employeeData[1], employeeData[0],
+		Employee employee = new Employee(
+				employeeData[1], employeeData[0],
 				employeeData[2], employeeData[3]);
 		return employee;
 	}
-
 }

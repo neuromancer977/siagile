@@ -1,22 +1,42 @@
 package code.siagile.birthday_greetings;
 
-import java.io.IOException;
-import java.text.ParseException;
 import java.util.List;
 
-import javax.mail.MessagingException;
-import javax.mail.internet.AddressException;
+import org.hamcrest.BaseMatcher;
+import org.hamcrest.Description;
+
 
 public class BirthdayService {
 
 	public void sendGreetings(String fileName, OurDate ourDate,
-			String smtpHost, int smtpPort) throws IOException, ParseException, AddressException, MessagingException {
-		Sender sender = new SmtpSender(smtpHost, smtpPort);
-		EmployeeRepository repository = new FileEmployeeRepository(fileName);
-		List<Employee> employees = repository.findAllBornOn(ourDate);
-		for (Employee employee : employees) {
-			IMessage greetingsMessage = new GreetingMessage(employee);
-			sender.send(greetingsMessage);
+			String host, int port)  {
+		
+		List<Employee> employees = repository(fileName)
+									.findAll(bornOn(ourDate));
+		new SmtpSender(host, port).send(employees);
+	}
+
+	private FileEmployeeRepository repository(String fileName) {
+		return new FileEmployeeRepository(fileName);
+	}
+
+	private BornOn bornOn(OurDate ourDate) {
+		return new BornOn(ourDate);
+	}
+	
+	private class BornOn extends BaseMatcher<Employee>{
+
+		OurDate ourDate;
+		public BornOn(OurDate ourDate) {
+			this.ourDate = ourDate;
+		}
+
+		public boolean matches(Object e) {
+			return ((Employee)e).isBirthday(ourDate);
+		}
+
+		public void describeTo(Description description) {
+			description.appendText("She's not born in ").appendText(ourDate.toString());
 		}
 	}
 

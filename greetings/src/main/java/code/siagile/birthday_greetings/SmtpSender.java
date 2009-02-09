@@ -1,5 +1,7 @@
 package code.siagile.birthday_greetings;
 
+import java.util.List;
+
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.Session;
@@ -10,27 +12,32 @@ import javax.mail.internet.MimeMessage;
 
 public class SmtpSender implements Sender {
 	private static final String SENDER = "sender@here.com";
-	private String host;
-	private int port;
+	private Session session;
 
 	public SmtpSender(String host, int port) {
-		this.host=host;
-		this.port=port;
+		session = createSession(host, port);
+	}
+	
+	public void send(List<Employee> employees) {
+		for (Employee employee : employees) {
+			IMessage greetingsMessage = new GreetingMessage(employee);
+			send(greetingsMessage);
+		}
 	}
 
-	public void send(IMessage greetingsMessage) {
+
+	private void send(IMessage greetingsMessage) {
 		try {
-			sendMessage(host, port, SENDER, greetingsMessage);
+			sendMessage(SENDER, greetingsMessage);
 		} catch (Exception e) {
 			throw new RuntimeException(e);
 		}
 	}
 
-
-	private void sendMessage(String smtpHost, int smtpPort, String sender, IMessage greetingsMessage)
+	private void sendMessage(String sender, IMessage greetingsMessage)
 			throws AddressException, MessagingException {
 
-		Message smtpMessage = createMessage(smtpHost, smtpPort);
+		Message smtpMessage = new MimeMessage(session);
 		smtpMessage.setFrom(new InternetAddress(sender));
 		buildMessage(greetingsMessage, smtpMessage);
 		Transport.send(smtpMessage);
@@ -38,17 +45,17 @@ public class SmtpSender implements Sender {
 
 	private void buildMessage(IMessage greetingsMessage, Message smtpMessage) throws MessagingException,
 			AddressException {
-		smtpMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(greetingsMessage.getReceiver()));
-		smtpMessage.setSubject(greetingsMessage.getSubject());
-		smtpMessage.setText(greetingsMessage.getBody());
+		smtpMessage.setRecipient(Message.RecipientType.TO, new InternetAddress(greetingsMessage.receiver()));
+		smtpMessage.setSubject(greetingsMessage.subject());
+		smtpMessage.setText(greetingsMessage.body());
 	}
 
-	private Message createMessage(String smtpHost, int smtpPort) {
+	private Session createSession(String smtpHost, int smtpPort) {
 		java.util.Properties props = new java.util.Properties();
 		props.put("mail.smtp.host", smtpHost);
 		props.put("mail.smtp.port", "" + smtpPort);
 		Session session = Session.getDefaultInstance(props, null);
-		return new MimeMessage(session);
+		return session;
 	}
 
 }

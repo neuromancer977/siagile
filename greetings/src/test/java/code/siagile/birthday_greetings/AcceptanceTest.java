@@ -52,7 +52,4 @@ public class AcceptanceTest {
 		service.sendGreetings(employeeFileName, new OurDate(date), "localhost", NONSTANDARD_PORT);
 		emailIterator = server.getReceivedEmail();
 	}
-	
-	
-
 }

@@ -33,6 +33,7 @@ public class Employer implements Iterable<Employee> {
 		return employds.iterator();
 	}
 
+	@SuppressWarnings("unchecked")
 	public void sendHappyBirthDayEmailTo(Matcher employeeMatcher) {
 		mailBox.send(new HappyBirthDayGreeting(), to(this, employeeMatcher));
 	}

@@ -13,6 +13,9 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 		<module>greetings2</module>
 	  <module>greetingssingleif</module>
 	  <module>unitmockito</module>
+	  <module>greetings2</module>
+	  <module>greetings3</module>
+	  <module>greetingssingleif</module>
 	  <module>lambdaj</module>
 	</modules>
 </project>

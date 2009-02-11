@@ -1,10 +1,29 @@
 !3 !-slim:fitnesse.slim.SlimService-!
-|'''Date: '''|!-10:46:53 AM (CST) on Monday, December 1, 2008-!|
-|'''Command: '''|!-java -cp classes:lib/fitlibrary.jar:fitnesse.jar:fitlibrary.jar:/Users/unclebob/projects/FitNesse/lib/ant.jar:/Users/unclebob/projects/FitNesse/lib/dummy.jar:/Users/unclebob/projects/FitNesse/lib/easymock.jar:/Users/unclebob/projects/FitNesse/lib/fitlibrary.jar:/Users/unclebob/projects/FitNesse/lib/junit.jar:/Users/unclebob/projects/FitNesse/lib/svnkit.jar:/Users/unclebob/projects/FitNesse/lib/xerces.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/cobertura.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/lib/asm-2.2.1.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/lib/jakarta-oro-2.0.8.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/lib/log4j-1.2.9.jar:/Users/unclebob/projects/FitNesse/lib/testDirectory/dummy.jar:zork fitnesse.slim.SlimService  8086-!|
+|'''Date: '''|!-9:32:45 AM (CET) on Saturday, January 17, 2009-!|
+|'''Command: '''|!-java -cp classes:lib/fitlibrary.jar:fitnesse.jar:fitlibrary.jar:../greetings/target/classes:../greetings/target/test-classes:../lambdaj/target/classes:/home/luca/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar:/home/luca/workspace/siagile/fitnesse/lib/ant.jar:/home/luca/workspace/siagile/fitnesse/lib/dummy.jar:/home/luca/workspace/siagile/fitnesse/lib/easymock.jar:/home/luca/workspace/siagile/fitnesse/lib/junit.jar:/home/luca/workspace/siagile/fitnesse/lib/svnkit.jar:/home/luca/workspace/siagile/fitnesse/lib/xerces.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/cobertura.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/lib/asm-2.2.1.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/lib/jakarta-oro-2.0.8.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/lib/log4j-1.2.9.jar:/home/luca/workspace/siagile/fitnesse/lib/testDirectory/dummy.jar:zork fitnesse.slim.SlimService  8087-!|
 |'''Exit code: '''|!-0-!|
-|'''Time elapsed: '''|!-6.184 seconds-!|
+|'''Time elapsed: '''|!-14.129 seconds-!|
 !3 !-fit:fit.FitServer-!
-|'''Date: '''|!-10:46:53 AM (CST) on Monday, December 1, 2008-!|
-|'''Command: '''|!-java -cp classes:lib/fitlibrary.jar:fitnesse.jar:fitlibrary.jar:/Users/unclebob/projects/FitNesse/lib/ant.jar:/Users/unclebob/projects/FitNesse/lib/dummy.jar:/Users/unclebob/projects/FitNesse/lib/easymock.jar:/Users/unclebob/projects/FitNesse/lib/fitlibrary.jar:/Users/unclebob/projects/FitNesse/lib/junit.jar:/Users/unclebob/projects/FitNesse/lib/svnkit.jar:/Users/unclebob/projects/FitNesse/lib/xerces.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/cobertura.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/lib/asm-2.2.1.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/lib/jakarta-oro-2.0.8.jar:/Users/unclebob/projects/FitNesse/lib/cobertura-1.8/lib/log4j-1.2.9.jar:/Users/unclebob/projects/FitNesse/lib/testDirectory/dummy.jar:zork fit.FitServer BobsMacbook.local 8080 1-!|
+|'''Date: '''|!-9:32:45 AM (CET) on Saturday, January 17, 2009-!|
+|'''Command: '''|!-java -cp classes:lib/fitlibrary.jar:fitnesse.jar:fitlibrary.jar:../greetings/target/classes:../greetings/target/test-classes:../lambdaj/target/classes:/home/luca/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar:/home/luca/workspace/siagile/fitnesse/lib/ant.jar:/home/luca/workspace/siagile/fitnesse/lib/dummy.jar:/home/luca/workspace/siagile/fitnesse/lib/easymock.jar:/home/luca/workspace/siagile/fitnesse/lib/junit.jar:/home/luca/workspace/siagile/fitnesse/lib/svnkit.jar:/home/luca/workspace/siagile/fitnesse/lib/xerces.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/cobertura.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/lib/asm-2.2.1.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/lib/jakarta-oro-2.0.8.jar:/home/luca/workspace/siagile/fitnesse/lib/cobertura-1.8/lib/log4j-1.2.9.jar:/home/luca/workspace/siagile/fitnesse/lib/testDirectory/dummy.jar:zork fit.FitServer luca-laptop 8080 4-!|
 |'''Exit code: '''|!-0-!|
-|'''Time elapsed: '''|!-18.639 seconds-!|
+|'''Time elapsed: '''|!-39.164 seconds-!|
+----'''Standard Error:'''
+{{{java.lang.InterruptedException
+	at java.lang.Object.wait(Native Method)
+	at java.lang.Object.wait(Object.java:474)
+	at java.lang.UNIXProcess.waitFor(UNIXProcess.java:165)
+	at fitnesse.components.CommandRunner.join(CommandRunner.java:55)
+	at fitnesse.components.CommandRunner.kill(CommandRunner.java:65)
+	at fitnesse.components.CommandRunningFitClient.kill(CommandRunningFitClient.java:127)
+	at fitnesse.responders.run.FitTestSystem.kill(FitTestSystem.java:42)
+	at fitnesse.responders.run.TestSystemGroup.kill(TestSystemGroup.java:41)
+	at fitnesse.responders.run.TestResponder.exceptionOccurred(TestResponder.java:107)
+	at fitnesse.responders.run.TestSystem.exceptionOccurred(TestSystem.java:77)
+	at fitnesse.components.FitClient.exceptionOccurred(FitClient.java:73)
+	at fitnesse.components.CommandRunningFitClient.exceptionOccurred(CommandRunningFitClient.java:139)
+	at fitnesse.components.FitClient.listenToFit(FitClient.java:112)
+	at fitnesse.components.FitClient.access$100(FitClient.java:13)
+	at fitnesse.components.FitClient$FitListeningRunnable.run(FitClient.java:151)
+	at java.lang.Thread.run(Thread.java:595)
+}}}

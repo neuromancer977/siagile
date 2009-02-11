@@ -9,7 +9,10 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 	<name>SI Agile Master</name>
   <modules>
 	  <module>dojo</module>
-	  <module>greetings</module>
+		<module>greetings</module>
+		<module>greetings2</module>
+	  <module>greetingssingleif</module>
+	  <module>unitmockito</module>
 	  <module>lambdaj</module>
 	</modules>
 </project>

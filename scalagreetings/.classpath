@@ -8,5 +8,4 @@
   <classpathentry kind="var" path="M2_REPO/junit/junit/4.5/junit-4.5.jar" sourcepath="M2_REPO/junit/junit/4.5/junit-4.5-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-compiler/2.7.5/scala-compiler-2.7.5.jar" sourcepath="M2_REPO/org/scala-lang/scala-compiler/2.7.5/scala-compiler-2.7.5-sources.jar"/>
   <classpathentry kind="var" path="M2_REPO/org/scala-lang/scala-library/2.7.5/scala-library-2.7.5.jar" sourcepath="M2_REPO/org/scala-lang/scala-library/2.7.5/scala-library-2.7.5-sources.jar"/>
-  <classpathentry kind="var" path="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5.jar" sourcepath="M2_REPO/javax/servlet/servlet-api/2.5/servlet-api-2.5-sources.jar"/>
 </classpath>

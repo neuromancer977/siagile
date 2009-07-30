@@ -1,0 +1,9 @@
+/home/luca/workspace/scala-command/src/main/scala/code/lucamarrocco/scala/command/ScalaCommand.scala:18: error: not found: value buildingCommant
+    var result: String = buildingCommant toString
+                         ^
+/home/luca/workspace/scala-command/src/main/scala/code/lucamarrocco/scala/command/ScalaCommand.scala:20: error: type mismatch;
+ found   : Unit
+ required: String
+    result = result.replaceAll("\\s+", " ")
+           ^
+two errors found

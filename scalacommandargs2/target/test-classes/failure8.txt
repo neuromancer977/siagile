@@ -1,0 +1,5 @@
+/home/luca/workspace/scala-command/src/main/scala/code/lucamarrocco/scala/command/ScalaCommand.scala:18: error: missing arguments for method clean in class ScalaCommand;
+follow this method with `_' if you want to treat it as a partially applied function
+    clean buildingCommand toString
+    ^
+one error found

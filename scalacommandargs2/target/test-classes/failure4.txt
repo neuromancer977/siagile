@@ -1,0 +1,8 @@
+/home/luca/workspace/scala-command/src/test/scala/code/lucamarrocco/scala/command/ScalaCommandTest.scala:14: error: ')' expected but string literal found.
+			assertThat(command, is(equalTo ""))
+                                                       ^
+/home/luca/workspace/scala-command/src/test/scala/code/lucamarrocco/scala/command/ScalaCommandTest.scala:15: error: ')' expected but '}' found.
+	}
+        ^
+two errors found
+

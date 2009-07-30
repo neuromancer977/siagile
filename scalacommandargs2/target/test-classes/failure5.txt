@@ -1,0 +1,4 @@
+/home/luca/workspace/scala-command/src/main/scala/code/lucamarrocco/scala/command/ScalaCommand.scala:4: error: expected start of definition
+  override toString(): String = ""
+           ^
+one error found

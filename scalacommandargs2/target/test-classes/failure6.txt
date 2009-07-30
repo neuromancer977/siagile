@@ -1,0 +1,4 @@
+/home/luca/workspace/scala-command/src/test/scala/code/lucamarrocco/scala/command/ScalaCommandTest.scala:24: error: value source is not a member of code.lucamarrocco.scala.command.ScalaCommand
+      buildingCommand source "Foo.scala"
+                      ^
+one error found

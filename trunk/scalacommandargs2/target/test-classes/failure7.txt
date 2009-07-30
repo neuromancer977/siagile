@@ -1,0 +1,11 @@
+/home/luca/workspace/scala-command/src/main/scala/code/lucamarrocco/scala/command/ScalaCommand.scala:5: error: class List is abstract; cannot be instantiated
+  val sources: List[String] = new List()
+                              ^
+/home/luca/workspace/scala-command/src/main/scala/code/lucamarrocco/scala/command/ScalaCommand.scala:7: error: value :: is not a member of String
+  def source(name: String) = sources :: name
+                                     ^
+/home/luca/workspace/scala-command/src/main/scala/code/lucamarrocco/scala/command/ScalaCommand.scala:10: error: object String is not a value
+    String = "scalac"
+    ^
+three errors found
+

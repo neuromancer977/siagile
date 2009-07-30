@@ -1,0 +1,4 @@
+/home/luca/workspace/scala-command/src/test/scala/code/lucamarrocco/scala/command/ScalaCommandTest.scala:10: error: package command is not a value
+			assertThat(command, is equalTo "")
+                                   ^
+one error found

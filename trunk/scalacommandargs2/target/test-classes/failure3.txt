@@ -1,0 +1,8 @@
+/home/luca/workspace/scala-command/src/test/scala/code/lucamarrocco/scala/command/ScalaCommandTest.scala:14: error: ambiguous reference to overloaded definition,
+both method is in object Matchers of type (java.lang.Class[_])org.hamcrest.Matcher[java.lang.Object]
+and  method is in object Matchers of type [T](org.hamcrest.Matcher[T])org.hamcrest.Matcher[T]
+match expected type ?
+			assertThat(command, is equalTo "")
+                                            ^
+one error found
+

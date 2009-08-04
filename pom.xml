@@ -15,5 +15,9 @@ http://maven.apache.org/maven-v4_0_0.xsd">
 	  <module>greetingssingleif</module>
 	  <module>unitmockito</module>
 	  <module>lambdaj</module>
+	  <module>scalacommandargs</module>
+	  <module>scalacommandargs2</module>
+	  <module>scalacommandargs3</module>
+	  <module>scalacommandargs4</module>
 	</modules>
 </project>

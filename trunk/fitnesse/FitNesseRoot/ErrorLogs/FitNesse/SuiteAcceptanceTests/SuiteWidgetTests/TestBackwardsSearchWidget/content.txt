@@ -1,5 +1,5 @@
 !3 !-slim:fitnesse.slim.SlimService-!
-|'''Date: '''|!-10:01:14 AM (CST) on Friday, November 28, 2008-!|
-|'''Command: '''|!--!|
-|'''Exit code: '''|!--1-!|
-|'''Time elapsed: '''|!-0.0 seconds-!|
+|'''Date: '''|!-8:49:07 AM (CET) on lunedì, febbraio 23, 2009-!|
+|'''Command: '''|!-java -cp classes:lib/fitlibrary.jar:fitnesse.jar:fitlibrary.jar:../greetings/target/classes:../greetings/target/test-classes:../lambdaj/target/classes:/home/luca/.m2/repository/org/hamcrest/hamcrest-all/1.1/hamcrest-all-1.1.jar fitnesse.slim.SlimService  8086-!|
+|'''Exit code: '''|!-0-!|
+|'''Time elapsed: '''|!-1.203 seconds-!|

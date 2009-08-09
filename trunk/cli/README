@@ -1,0 +1,7 @@
+CLI e' la command line interface
+
+Esiste in 1000 varianti ed e' una generalizzazione che mi e' venuta in mente
+partendo da getopt.h di <unistd> di C/C++ e apache commons CLI.
+
+E' solo una prima bozza per gestire i comandi e le opzioni.
+Identifica solo il domain model.

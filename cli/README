@@ -5,3 +5,6 @@ partendo da getopt.h di <unistd> di C/C++ e apache commons CLI.
 
 E' solo una prima bozza per gestire i comandi e le opzioni.
 Identifica solo il domain model.
+
+Vorrebbe gestire anche i path che ora mancano per validare il comando e altre cosette.
+A riguardo rimando alla letteratura.
